@@ -1,6 +1,7 @@
 ![targeteater's GitHub stats](https://github-readme-stats.vercel.app/api?username=targeteater&show_icons=true&theme=dark)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=targeteater&layout=donut&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=targeteater&theme=dark)](https://git.io/streak-stats)
+[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
 
 <!--
 **targeteater/targeteater** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
