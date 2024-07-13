@@ -1,4 +1,4 @@
-[![targeteater's GitHub stats](https://github-readme-stats.vercel.app/api?username=targeteater)](https://github.com/anuraghazra/github-readme-stats)
+![targeteater's GitHub stats](https://github-readme-stats.vercel.app/api?username=targeteater&show_icons=true&theme=dark)
 
 <!--
 **targeteater/targeteater** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
