@@ -1,5 +1,5 @@
 ![targeteater's GitHub stats](https://github-readme-stats.vercel.app/api?username=targeteater&show_icons=true&theme=dark)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=targeteater&layout=compact&theme=dark)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=targeteater&layout=donut&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=targeteater&theme=dark)](https://git.io/streak-stats)
 
 <!--
