@@ -1720,3 +1720,5 @@ function library:deleteConfig()
         library:refreshConfigs()
     end
 end
+
+return library
