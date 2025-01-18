@@ -6,32 +6,12 @@ local startUpArgs = getgenv().startUpArgs or { 'universal', 'public' }
     --LEAKED BY FIJI https://v3rmillion.net/showthread.php?tid=1208282
 --]]
 
-local function makeRequest(url)
-    local success, result
-    
-    if syn then 
-        success, result = pcall(function() return syn.request({Url = url, Method = 'GET'}).Body end)
-    elseif http and http.request then
-        success, result = pcall(function() return http.request({Url = url, Method = 'GET'}).Body end)
-    elseif http_request then
-        success, result = pcall(function() return http_request({Url = url, Method = 'GET'}).Body end)
-    elseif HTTP_REQUEST then
-        success, result = pcall(function() return HTTP_REQUEST({Url = url, Method = 'GET'}).Body end)
-    elseif fluxus and fluxus.request then
-        success, result = pcall(function() return fluxus.request({Url = url, Method = 'GET'}).Body end)
-    elseif request then
-        success, result = pcall(function() return request({Url = url, Method = 'GET'}).Body end)
-    end
+local requestFunction = syn and syn.request or http_request
+local HttpService = game:GetService("HttpService")
 
-    if success and result then
-        return result
-    else
-        error("xd not supported")
-    end
-end
+local drawing = loadstring(requestFunction({Url = "https://gist.githubusercontent.com/0f76/9dc85c8c380d895373dd306fd372fa59/raw/e2abc40c2b5f159d61b10558c86e4f98823e30f5/drawing_extension.lua", Method = "GET"}).Body)()
+local tween = loadstring(requestFunction({Url = "https://gist.githubusercontent.com/0f76/1661258383c3c320ac5af2c9dd923fd5/raw/ee3c79b95eafa3b732127a0a7d37a4dc43b3bd60/custom_tween.lua", Method = "GET"}).Body)()
 
-local drawing = loadstring(makeRequest('https://gist.githubusercontent.com/0f76/9dc85c8c380d895373dd306fd372fa59/raw/e2abc40c2b5f159d61b10558c86e4f98823e30f5/drawing_extension.lua'))()
-local tween = loadstring(makeRequest('https://gist.githubusercontent.com/0f76/1661258383c3c320ac5af2c9dd923fd5/raw/ee3c79b95eafa3b732127a0a7d37a4dc43b3bd60/custom_tween.lua'))()
 local services = setmetatable({}, {
     __index = function(_, k)
         k = (k == "InputService" and "UserInputService") or k
